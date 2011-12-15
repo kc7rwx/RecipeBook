@@ -1,0 +1,7 @@
+= form_for([@recipe, @recipe.variations.new]) do |f|
+  .field
+    = f.label :batch_name
+    %br
+    = f.text_field :batch_name
+  .actions
+    = f.submit 'Add'
