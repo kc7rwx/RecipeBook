@@ -2,6 +2,8 @@
 
 one:
   content: MyText
+  variation_id: 1
 
 two:
   content: MyText
+  variation_id: 1
