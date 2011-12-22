@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  qty: 1.5
+  units: MyString
+  batch_id: 1
+
+two:
+  name: MyString
+  qty: 1.5
+  units: MyString
+  batch_id: 1

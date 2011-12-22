@@ -1,4 +1,8 @@
 RecipeBook::Application.routes.draw do
+  resources :recipes do
+    resources :batches
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
