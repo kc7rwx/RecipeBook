@@ -3,7 +3,3 @@
 
 en:
   hello: "Hello world"
-  variations:
-    created_success: "Created new variant"
-    creation_failed: "Failed to create new variant"
-    deleted: "Variant deleted"

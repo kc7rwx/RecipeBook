@@ -1,12 +1,4 @@
 RecipeBook::Application.routes.draw do
-  resources :recipes do
-    resources :variations do
-      resources :ingredients
-      resources :instructions
-      resources :tasting_notes
-    end
-  end
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
