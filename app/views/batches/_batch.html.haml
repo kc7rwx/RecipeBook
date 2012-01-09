@@ -2,4 +2,5 @@
   %h3
     = batch.name
     %span.actions
+      = link_to 'Show', [@recipe, batch]
       = link_to 'Delete', [@recipe, batch], :confirm => 'Are you sure?', :method => :delete

@@ -1,6 +1,13 @@
 class BatchesController < ApplicationController
   before_filter :load_recipe
   
+  def show
+    @batch = @recipe.batches.find(params[:id])
+    respond_to do |format|
+      format.html # show.html.haml
+    end
+  end
+  
   def create
     @batch = @recipe.batches.new(params[:batch])
     if @recipe.save
