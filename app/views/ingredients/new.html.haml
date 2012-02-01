@@ -1,0 +1,9 @@
+= form_for([@batch, @batch.ingredients.new]) do |f|
+  .field
+    = f.label 'New Ingredient'
+    %br/
+    = f.text_field :qty
+    = f.text_field :units
+    = f.text_field :name
+  .actions
+    = f.submit 'Add'
