@@ -1,5 +1,9 @@
-= render @recipe
-%h3 Batches
-#batches
-  = render @recipe.batches
-= render :file => 'batches/new'
+%p#notice= notice
+%h2
+  = @recipe.name
+
+= render 'batches/index'
+
+= link_to 'Edit', edit_recipe_path(@recipe)
+\|
+= link_to 'Back', recipes_path

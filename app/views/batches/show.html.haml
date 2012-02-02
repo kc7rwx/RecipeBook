@@ -1,19 +1,17 @@
+%p#notice= notice
 %h2
-  Recipe
-  %br/
-  %h3
-    = link_to @recipe.name, @recipe
-  = @recipe.description 
-%h2  
-  Batch
-  %br/
-  %h3
-    = @batch.name
+  =@batch.recipe.name
+  
+%table
+  %tr
+    %th
 
-- @batch.ingredients.each do |ingredient|
-  = div_for(ingredient) do
-    = ingredient.qty
-    = ingredient.units
-    = ingredient.name
-    
-= render :file => 'ingredients/new'
+  - @batch.ingredients.each do |ingredient|
+    %tr
+      %td= ingredient.qty
+      %td= ingredient.units
+      %td= ingredient.name
+
+= link_to 'Edit', edit_recipe_batch_path(@batch)
+\|
+= link_to 'Back', recipe_path
