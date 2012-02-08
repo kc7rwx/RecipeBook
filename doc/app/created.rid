@@ -1,0 +1,14 @@
+Fri, 03 Feb 2012 16:16:35 +0900
+doc/README_FOR_APP	Thu, 22 Dec 2011 22:27:48 +0900
+app/helpers/batches_helper.rb	Fri, 23 Dec 2011 00:28:13 +0900
+app/helpers/application_helper.rb	Thu, 22 Dec 2011 22:27:48 +0900
+app/helpers/recipes_helper.rb	Fri, 23 Dec 2011 00:23:08 +0900
+app/helpers/ingredients_helper.rb	Tue, 10 Jan 2012 08:59:22 +0900
+app/controllers/application_controller.rb	Thu, 22 Dec 2011 22:27:48 +0900
+app/controllers/ingredients_controller.rb	Thu, 02 Feb 2012 13:05:10 +0900
+app/controllers/batches_controller.rb	Fri, 03 Feb 2012 08:35:26 +0900
+app/controllers/recipes_controller.rb	Thu, 02 Feb 2012 11:40:19 +0900
+app/models/batch.rb	Fri, 23 Dec 2011 01:39:38 +0900
+app/models/ingredient.rb	Fri, 23 Dec 2011 01:39:38 +0900
+app/models/recipe.rb	Fri, 23 Dec 2011 01:33:15 +0900
+app/models/instruction.rb	Fri, 23 Dec 2011 01:39:38 +0900

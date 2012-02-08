@@ -1,0 +1,5 @@
+= f.label :name
+= f.text_field :name
+%br
+= f.fields_for :ingredients do |builder|
+  = render "ingredients_fields", :f => builder

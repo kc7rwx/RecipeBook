@@ -5,6 +5,17 @@
       %ul
         - @recipe.errors.full_messages.each do |msg|
           %li= msg
+  .field
+    =f.label :name
+    =f.text_field :name
+    
+  .field
+    =f.label :description
+    =f.text_field :description
+    
+  %h3 Batches
+  = f.fields_for :batches do |builder|
+    = render "batches_fields", :f => builder
 
   .actions
     = f.submit 'Save'

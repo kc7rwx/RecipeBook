@@ -1,8 +1,18 @@
-%p#notice= notice
-%h2
-  = @recipe.name
+%h2= best_in_place @recipe, :name
+= best_in_place @recipe, :description
 
-= render 'batches/index'
+%br
+#tabs
+  %ul
+    - @recipe.batches.each do |batch|
+      %li 
+        %a{:href => "#tab#{batch.id}"}= best_in_place batch, :name
+        
+  - @recipe.batches.each do |batch|
+    = render 'batches/show', :batch => batch
+    
+
+%br
 
 = link_to 'Edit', edit_recipe_path(@recipe)
 \|

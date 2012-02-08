@@ -1,0 +1,2 @@
+module BatchesControllerHelper
+end

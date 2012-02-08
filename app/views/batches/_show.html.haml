@@ -1,0 +1,11 @@
+%div{:id => "tab#{batch.id}"}
+  %h3 Ingredients
+  -batch.ingredients.each do |ingredient|
+    = best_in_place ingredient, :qty
+    = " " + ingredient.units.to_s + " " + ingredient.name.to_s
+    %br
+  = render "batches/new"
+  %h3 Instructions
+  -batch.instructions.each_with_index do |instruction, i|
+    =i.to_s + ". " + instruction
+    %br
